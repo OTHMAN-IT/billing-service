@@ -26,8 +26,10 @@ sans avoir à accéder à la base de donnée.
 Création d'un fichier controller "BillingRestController":
 -Mentionner l'annotation @RestController.
 -Injecter les Repository et les services open Feign crées.
--Generer un constructeur avec parametre des injections précedants.
+-Generer un constructeur avec parametre des injections précedentes.
 -Création d'une méthode get qui fournira la facture au complet avec les informations nécessaires tout en utiliasant les repository et les services Open Feign déja crée.
+
+-------------------------------
 
 Création de deux models "Customer.java" et "Inventory.java" sans mentionner l'annotation de mappage relationne "@entity".
 Les models doivent etre similaire avec les entités se trouvant au niveau des micro services concernés en ajoutant l'annotation @data pour les setters et les getters.
