@@ -37,7 +37,6 @@ public class BillingRestController {
             //pi.setProduct(product);
             pi.setProductName(product.getName());
             pi.setProductRef(product.getReference());
-            pi.setSubPrice(productItemRepository.totalPrice());
         });
         // bill.getCustomerID();
 

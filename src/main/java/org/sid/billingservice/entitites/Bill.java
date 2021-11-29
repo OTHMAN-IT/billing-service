@@ -22,7 +22,6 @@ public class Bill {
     private Long id;
     private String referenceB;
     private Date billingDate;
-    private double totalPrice;
     @OneToMany(mappedBy = "bill")
     private Collection<ProductItem> productItems;
     private Long customerID;

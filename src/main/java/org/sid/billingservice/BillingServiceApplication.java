@@ -41,7 +41,7 @@ public class BillingServiceApplication {
         return args -> {
             restConfiguration.exposeIdsFor(Bill.class);
       Customer customer = customerServiceClient.findCustomerById(1L);
-            Bill bill = billRepository.save(new Bill(null, UUID.randomUUID().toString(), new Date(),0,null, customer.getId(), null));
+            Bill bill = billRepository.save(new Bill(null, UUID.randomUUID().toString(), new Date(),null, customer.getId(), null));
             System.out.println("------------------------------------");
             PagedModel<Product> productPagedModel = inventoryServiceClient.pageProducts();
             productPagedModel.forEach(p->{
