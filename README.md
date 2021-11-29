@@ -46,5 +46,7 @@ Les dépendances nécessaires:
 -Spring Boot DevTools
 -Eureka Discovery Client
 -Spring Boot Actuator
+-OpenFeign
+-Spring HATEOS
 
 -------------------------------
