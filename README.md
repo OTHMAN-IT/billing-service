@@ -17,10 +17,16 @@ Configuration application.properties où on mentionne:
 -L'activation du cloud discovery.
 
 -------------------------------
+Communication REST entre les micro-services : Declarative Rest Client avec Spring Cloud Feign
+
 Création de deux Interfaces Open Feign "CustomerServiceClient.java" et "InventoryServiceClient.java" afin de communique avec les micro services "CUSTOMER-SERVICE" et "INVENTORY-SERVICE"
 sans avoir à accéder à la base de donnée.
 @FeignClient(name = "CUSTOMER-SERVICE")
 @FeignClient(name = "INVENTORY-SERVICE")
+
+Feign est un Framework, introduite dans Spring cloud, qui permet de créer facilement un Client REST d’une manière déclarative.
+
+Le service Billing est un service de facturation qui doit absolument interagir avec les autres micro services(CUSTOMER-SERVICE & INVENTORY-SERVICE) afin de récuperer des informations.
 
 -------------------------------
 Création d'un fichier controller "BillingRestController":
